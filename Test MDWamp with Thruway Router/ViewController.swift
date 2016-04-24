@@ -23,7 +23,7 @@ class ViewController: UIViewController, MDWampClientDelegate {
             let port = portField.text ?? "9090"
             let url = "ws://\(hostname):\(port)"
             
-            mdwamp = MDWamp(transport: MDWampTransportWebSocket(server: NSURL(string: url), protocolVersions: [kMDWampProtocolWamp2json, kMDWampProtocolWamp2msgpack]), realm: "realm1", delegate: self)
+            mdwamp = MDWamp(transport: MDWampTransportWebSocket(server: NSURL(string: url), protocolVersions: [kMDWampProtocolWamp2json]), realm: "realm1", delegate: self)
         }
         
         if let wamp = mdwamp {
