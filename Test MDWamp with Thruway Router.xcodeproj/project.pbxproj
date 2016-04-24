@@ -12,9 +12,11 @@
 		726E95DB1CCCCE1F00FFB351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726E95D91CCCCE1F00FFB351 /* Main.storyboard */; };
 		726E95DD1CCCCE1F00FFB351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 726E95DC1CCCCE1F00FFB351 /* Assets.xcassets */; };
 		726E95E01CCCCE1F00FFB351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726E95DE1CCCCE1F00FFB351 /* LaunchScreen.storyboard */; };
+		DE5716AE77B723C1BF7A532E /* Pods_Test_MDWamp_with_Thruway_Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDBFE8C60791253E091451CD /* Pods_Test_MDWamp_with_Thruway_Router.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4C1D90DCD93C4CAA3A051A /* Pods-Test MDWamp with Thruway Router.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test MDWamp with Thruway Router.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test MDWamp with Thruway Router/Pods-Test MDWamp with Thruway Router.release.xcconfig"; sourceTree = "<group>"; };
 		726E95D21CCCCE1F00FFB351 /* Test MDWamp with Thruway Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test MDWamp with Thruway Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		726E95D51CCCCE1F00FFB351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		726E95D71CCCCE1F00FFB351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		726E95DC1CCCCE1F00FFB351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		726E95DF1CCCCE1F00FFB351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		726E95E11CCCCE1F00FFB351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B656DCBB0356ADD912DE97F0 /* Pods-Test MDWamp with Thruway Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test MDWamp with Thruway Router.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test MDWamp with Thruway Router/Pods-Test MDWamp with Thruway Router.debug.xcconfig"; sourceTree = "<group>"; };
+		EDBFE8C60791253E091451CD /* Pods_Test_MDWamp_with_Thruway_Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_MDWamp_with_Thruway_Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5716AE77B723C1BF7A532E /* Pods_Test_MDWamp_with_Thruway_Router.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		299A9E6A32C7502707F77F9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B656DCBB0356ADD912DE97F0 /* Pods-Test MDWamp with Thruway Router.debug.xcconfig */,
+				1F4C1D90DCD93C4CAA3A051A /* Pods-Test MDWamp with Thruway Router.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		726E95C91CCCCE1F00FFB351 = {
 			isa = PBXGroup;
 			children = (
 				726E95D41CCCCE1F00FFB351 /* Test MDWamp with Thruway Router */,
 				726E95D31CCCCE1F00FFB351 /* Products */,
+				299A9E6A32C7502707F77F9D /* Pods */,
+				793F9E8BD7FCF22385B1A060 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "Test MDWamp with Thruway Router";
 			sourceTree = "<group>";
 		};
+		793F9E8BD7FCF22385B1A060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDBFE8C60791253E091451CD /* Pods_Test_MDWamp_with_Thruway_Router.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 726E95E41CCCCE1F00FFB351 /* Build configuration list for PBXNativeTarget "Test MDWamp with Thruway Router" */;
 			buildPhases = (
+				A2AF9C1A8B55E6D59FDA9992 /* Check Pods Manifest.lock */,
 				726E95CE1CCCCE1F00FFB351 /* Sources */,
 				726E95CF1CCCCE1F00FFB351 /* Frameworks */,
 				726E95D01CCCCE1F00FFB351 /* Resources */,
+				017977A9F666959C31F4F9DA /* Embed Pods Frameworks */,
+				70683386D677E34587A08F6B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		017977A9F666959C31F4F9DA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test MDWamp with Thruway Router/Pods-Test MDWamp with Thruway Router-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70683386D677E34587A08F6B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test MDWamp with Thruway Router/Pods-Test MDWamp with Thruway Router-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2AF9C1A8B55E6D59FDA9992 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		726E95CE1CCCCE1F00FFB351 /* Sources */ = {
@@ -249,9 +324,11 @@
 		};
 		726E95E51CCCCE1F00FFB351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B656DCBB0356ADD912DE97F0 /* Pods-Test MDWamp with Thruway Router.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Test MDWamp with Thruway Router/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.zarv1k.Test-MDWamp-with-Thruway-Router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,9 +337,11 @@
 		};
 		726E95E61CCCCE1F00FFB351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4C1D90DCD93C4CAA3A051A /* Pods-Test MDWamp with Thruway Router.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Test MDWamp with Thruway Router/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.zarv1k.Test-MDWamp-with-Thruway-Router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +367,7 @@
 				726E95E61CCCCE1F00FFB351 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

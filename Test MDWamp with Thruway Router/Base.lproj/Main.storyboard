@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test_MDWamp_with_Thruway_Router" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +17,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="127.0.0.1" borderStyle="roundedRect" placeholder="Hostname or IP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-4o-4OU">
+                                <rect key="frame" x="20" y="40" width="494" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9090" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rqs-pa-6YF">
+                                <rect key="frame" x="524" y="40" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="rFV-Ub-pl7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STV-4T-Pn2">
+                                <rect key="frame" x="271" y="78" width="59" height="30"/>
+                                <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="toggleWampConnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y5x-QP-w6b"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="nwX-4o-4OU" secondAttribute="leading" id="2mN-rz-NR8"/>
+                            <constraint firstItem="STV-4T-Pn2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4vr-H2-6vc"/>
+                            <constraint firstItem="Rqs-pa-6YF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="7PX-Yf-l0D"/>
+                            <constraint firstItem="STV-4T-Pn2" firstAttribute="top" secondItem="nwX-4o-4OU" secondAttribute="bottom" constant="8" id="8tf-4G-t7n"/>
+                            <constraint firstItem="Rqs-pa-6YF" firstAttribute="leading" secondItem="nwX-4o-4OU" secondAttribute="trailing" constant="10" id="Aa8-FL-ABR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rqs-pa-6YF" secondAttribute="trailing" id="EXC-G2-ygQ"/>
+                            <constraint firstItem="nwX-4o-4OU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="nCs-GH-yl2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="connectButton" destination="STV-4T-Pn2" id="Zvf-wQ-mdo"/>
+                        <outlet property="hostnameField" destination="nwX-4o-4OU" id="8ph-TY-e74"/>
+                        <outlet property="portField" destination="Rqs-pa-6YF" id="eLw-A6-pgN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,6 @@
+framework module MDWamp {
+  umbrella header "MDWamp-umbrella.h"
+
+  export *
+  module * { export * }
+}
